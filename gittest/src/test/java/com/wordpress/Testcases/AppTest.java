@@ -1,4 +1,4 @@
-package guru99.gittest;
+package com.wordpress.Testcases;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="SanitySuite">
+  <test name="AppTest">
+    <classes>
+      <class name="com.wordpress.Testcases.AppTest"/>     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

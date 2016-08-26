@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
+  
   <groupId>guru99</groupId>
   <artifactId>gittest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
@@ -22,7 +22,20 @@
             <artifactId>testng</artifactId>								
             <version>6.8</version>								
             <scope>test</scope>							  			
-       </dependency>				
+       </dependency>	
+       
+   <dependency>
+   <groupId>com.google.inject</groupId>
+   <artifactId>guice</artifactId>
+   <version>3.0</version>
+   <scope>test</scope>
+  </dependency>
+  <dependency>
+   <groupId>org.uncommons</groupId>
+   <artifactId>reportng</artifactId>
+   <version>1.1.4</version>
+  </dependency>
+		
 </dependencies>
 	<build>
 		<plugins>
@@ -31,8 +44,8 @@
 	<artifactId>maven-compliler-plugin</artifactId>								
 	<version>2.3.2</version>
 	<configuration>
-	<source>1.7</source>
-	<target>1.7</target>
+		<source>1.7</source>
+		<target>1.7</target>
 	</configuration>	
 	</plugin>
 	<plugin>
@@ -41,9 +54,21 @@
 	<version>2.12</version>
 	<inherited>true</inherited>
 	<configuration>
-	<suiteXmlFiles>
-	<suiteXmlFile>testng.xml</suiteXmlFile>
-	</suiteXmlFiles>
+		<testFailureIgnore>true</testFailureIgnore>
+   		<skipTests>false</skipTests>
+		<suiteXmlFiles>
+			<suiteXmlFile>testng.xml</suiteXmlFile>
+		</suiteXmlFiles>
+		
+		<!-- Setting properties for test execution -->
+     <properties>
+     <!-- Setting ReportNG listeners -->
+         <property>
+           <name>listener</name>
+           <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
+         </property>
+     </properties>
+     
 	</configuration>	
 	</plugin>
 		</plugins>

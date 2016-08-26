@@ -2,32 +2,40 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="47970" started-at="2016-08-26T15:00:42Z" finished-at="2016-08-26T15:01:30Z">
+  <suite name="Complete Test Suite" duration-ms="0" started-at="2016-08-26T18:54:34Z" finished-at="2016-08-26T18:54:34Z">
     <groups>
     </groups>
-    <test name="TestCaseOne" duration-ms="31980" started-at="2016-08-26T15:00:42Z" finished-at="2016-08-26T15:01:14Z">
-      <class name="com.wordpress.Testcases.VerifyValidLogin">
-        <test-method status="PASS" signature="checkValidUser()[pri:0, instance:com.wordpress.Testcases.VerifyValidLogin@1081592]" name="checkValidUser" duration-ms="31941" started-at="2016-08-26T20:30:42Z" finished-at="2016-08-26T20:31:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkValidUser -->
-      </class> <!-- com.wordpress.Testcases.VerifyValidLogin -->
-    </test> <!-- TestCaseOne -->
-    <test name="TestCaseTwo" duration-ms="15903" started-at="2016-08-26T15:01:14Z" finished-at="2016-08-26T15:01:30Z">
+  </suite> <!-- Complete Test Suite -->
+  <suite name="SanitySuite" duration-ms="20217" started-at="2016-08-26T18:54:13Z" finished-at="2016-08-26T18:54:34Z">
+    <groups>
+    </groups>
+    <test name="AppTest" duration-ms="20217" started-at="2016-08-26T18:54:13Z" finished-at="2016-08-26T18:54:34Z">
       <class name="com.wordpress.Testcases.AppTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.wordpress.Testcases.AppTest@1efef64]" name="beforeTest" is-config="true" duration-ms="11896" started-at="2016-08-26T20:31:14Z" finished-at="2016-08-26T20:31:26Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.wordpress.Testcases.AppTest@e45eb6]" name="beforeTest" is-config="true" duration-ms="10559" started-at="2016-08-27T00:24:13Z" finished-at="2016-08-27T00:24:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:com.wordpress.Testcases.AppTest@1efef64]" name="testEasy" duration-ms="3560" started-at="2016-08-26T20:31:26Z" finished-at="2016-08-26T20:31:29Z">
+        <test-method status="PASS" signature="testEasy()[pri:0, instance:com.wordpress.Testcases.AppTest@e45eb6]" name="testEasy" duration-ms="9036" started-at="2016-08-27T00:24:24Z" finished-at="2016-08-27T00:24:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEasy -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.wordpress.Testcases.AppTest@1efef64]" name="afterTest" is-config="true" duration-ms="441" started-at="2016-08-26T20:31:29Z" finished-at="2016-08-26T20:31:30Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.wordpress.Testcases.AppTest@e45eb6]" name="afterTest" is-config="true" duration-ms="615" started-at="2016-08-27T00:24:33Z" finished-at="2016-08-27T00:24:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.wordpress.Testcases.AppTest -->
-    </test> <!-- TestCaseTwo -->
-  </suite> <!-- Suite -->
+    </test> <!-- AppTest -->
+  </suite> <!-- SanitySuite -->
+  <suite name="RegressionSuite" duration-ms="41758" started-at="2016-08-26T18:53:32Z" finished-at="2016-08-26T18:54:13Z">
+    <groups>
+    </groups>
+    <test name="Login" duration-ms="41758" started-at="2016-08-26T18:53:32Z" finished-at="2016-08-26T18:54:13Z">
+      <class name="com.wordpress.Testcases.VerifyValidLogin">
+        <test-method status="PASS" signature="checkValidUser()[pri:0, instance:com.wordpress.Testcases.VerifyValidLogin@1081592]" name="checkValidUser" duration-ms="41715" started-at="2016-08-27T00:23:32Z" finished-at="2016-08-27T00:24:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkValidUser -->
+      </class> <!-- com.wordpress.Testcases.VerifyValidLogin -->
+    </test> <!-- Login -->
+  </suite> <!-- RegressionSuite -->
 </testng-results>

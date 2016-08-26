@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="RegressionSuite">
+  <test name="Login">
+    <classes>
+      <class name="com.wordpress.Testcases.VerifyValidLogin"/>     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
